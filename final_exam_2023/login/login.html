@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginpage</title>
+    <style>
+        #div1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+        }
+        #div2{
+            width: 600px;
+            height: 500px;
+            margin: auto;
+            height: auto;
+        }
+        #longinbox{
+            height: auto;
+            text-align: center;
+            width: 500px;
+            margin:auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 3px gray solid;
+            border-radius: 5px;
+        }
+        #longinbox input{
+            margin: 10px;
+            width: 100%;
+            display: block;
+            border-radius: 1px;
+            border: 1px solid;
+        }
+        #longinbox a {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 96%;
+            text-decoration: none;
+            display: block;
+        }
+        #signin{
+            margin: auto;
+            border: 3px solid;
+            border-radius: 5px;
+            background-color: lightgray;
+            width: 500px;
+            display: flex;
+            justify-content: space-around;
+        }
+        #signin a{
+            text-decoration: none;
+        }
+    </style>
+
+    <script>
+        window.onload = function () {
+            
+        }
+    </script>
+</head>
+
+<body>
+    <div id="div1">
+        <p style="width: 650px; height: auto;">
+            <span style = "color: red; font-size: 25px;">特别说明：</h2></span>
+            <span style = "color:blue; font-size: 15px;">本网站不对外开放，仅供课程学习使用。需要使用的请按照任课老师的要求注册账号，并耐心等待老师审核通过后才能使用，请勿重复注册。</span>
+        </p>
+    </div>
+    <h1>登录</h1>
+    <div id="div2">
+        <div id = "longinbox">
+            <input type="text" placeholder="用户名">
+            <input type="text" placeholder="密码">
+            <a href="index.html"><input type="button" value = "登录" id = "but1" onclick="document.getElementById('but1').style.backgroundColor = 'lightblue'"></a>
+        </div>
+        <div id = "signin">
+            <a href="#"><span>注册账号</span></a>
+            <a href="#"><span>忘记密码</span></a>
+        </div>
+    </div>
+</body>
+
+</html>
