@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>origion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #topContainer {
+            padding-left: 20%;
+            padding-right: 20%;
+            display: flex;
+            width: auto;
+            height: 50px;
+            border: 1px solid gray;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #topContainer a {
+            color: black;
+            text-decoration: none;
+        }
+
+        #contentDiv {
+            height: auto;
+            width: 60%;
+            margin: auto;
+        }
+
+        #upDiv {
+            margin-bottom: 20px;
+        }
+
+        #outDiv {
+            display: flex;
+            width: 100%;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            box-shadow: 1px 1px 2px lightgray;
+            word-wrap: break-word;
+        }
+
+        #middleDiv {
+            margin: 10px;
+        }
+
+        #middleDiv a {
+            color: white;
+            font-size: 15px;
+            text-decoration: none;
+            background-color: blue;
+            border-radius: 3px;
+        }
+    </style>
+
+    <script>
+        window.onload = function () {
+            const aTags = document.querySelectorAll('#middleDiv a');
+            aTags.forEach(tag => {
+                const red = Math.floor(Math.random() * 256);
+                const green = Math.floor(Math.random() * 256);
+                const blue = Math.floor(Math.random() * 256);
+                tag.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div id="topContainer">
+        <a href="../index/index.html" id="nenuoj">
+            <div>
+                <h2>NENUOJ</h2>
+            </div>
+        </a>
+
+        <a href="../index/index.html" id="index">
+            <div>
+                <h3>主页</h3>
+            </div>
+        </a>
+
+        <a href="#" id="excercise">
+            <div>
+                <h3>问题</h3>
+            </div>
+        </a>
+
+        <a href="../origion/origion.html" id="source">
+            <div>
+                <h3>来源/分类</h3>
+            </div>
+        </a>
+
+        <a href="#" id="homework">
+            <div>
+                <h3>练习&作业</h3>
+            </div>
+        </a>
+
+        <a href="#" id=status>
+            <div>
+                <h3>状态</h3>
+            </div>
+        </a>
+
+        <a href="#" id="rank">
+            <div>
+                <h3>排名</h3>
+            </div>
+        </a>
+
+        <a href="#" id="help">
+            <div>
+                <h3>常见问题</h3>
+            </div>
+        </a>
+        <a href="#" id="discuss">
+            <div>
+                <h3>讨论版</h3>
+            </div>
+        </a>
+
+        <a href="#" id="information">
+            <div>
+                <h4>账号</h4>
+            </div>
+        </a>
+    </div>
+    <div id="contentDiv">
+        <div id="upDiv">
+            <h1>来源/分类</h1>
+        </div>
+        <div id="outDiv">
+            <div id="middleDiv">
+                <a href="#">测试题</a>
+                <a href="#">C语言入门</a>
+                <a href="#">模拟测试题</a>
+                <a href="#">C语言分支语句</a>
+                <a href="#">C语言循环语句</a>
+                <a href="#">算法1第3章</a>
+                <a href="#">算法1第4章</a>
+                <a href="#">算法1第5章</a>
+                <a href="#">算法2排序B</a>
+                <a href="#">算法1第6章</a>
+                <a href="#">算法1第7章</a>
+                <a href="#">算法1第8章</a>
+                <a href="#">算法1第9章</a>
+                <a href="#">算法2递归A</a>
+                <a href="#">算法2查找C</a>
+                <a href="#">算法2动态规划D</a>
+                <a href="#">算法2搜索E</a>
+                <a href="#">算法2贪心F</a>
+                <a href="#">研究生算法课程</a>
+                <a href="#">算法设计与分析</a>
+                <a href="#">c语言基础</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -19,6 +19,7 @@
             border: 1px solid gray;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 20px;
         }
         #topContainer a{
             color: black;
@@ -38,78 +39,112 @@
             flex: 3;
         }
         #annocement{
-            height: 150px;
+            height: auto;
             margin-bottom: 20px;
             border: 1px solid gray;
         }
         #helloworld{
-            height: 100px;
+            height: auto;
             border: 1px solid gray;
         }
         #newUpdate{
-            height: 350px;
+            height: auto;
             margin-bottom: 20px;
             border: 1px solid gray;
         }
         #find{
-            height: 100px;
+            height: auto;
             margin-bottom: 20px;
             border: 1px solid gray;
         }
         #newCompetition{
-            height: 350px;
+            height: auto;
             margin-bottom: 20px;
             border: 1px solid gray;
         }
         .headDiv{
             background-color: lightgray;
         }
-        .bottomDiv{
+        .middleDiv{
             line-height: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center ;
+        }
+        .middleDiv div{
+            flex: 1;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .bottomDiv{
             border: 1px solid lightgray;
             display: flex;
-            justify-content: space-around;
+            align-items: center ;
+            height: 50px;
+        }
+        .bottomDiv div:nth-child(1){
+            flex: 1;
+            text-align: center;
+        }
+        .bottomDiv div a{
+            text-decoration: none;
+            color: aqua;
+        }
+        .bottomDiv div:nth-child(2){
+            flex: 1;
+            text-align: center;
+            color: black;
+        }
+        #inputBox{
+            flex:1;
+            margin: 10px;
+            border-radius: 15px;
+            border: 1px solid lightgray;
         }
     </style>
+
+    <script>
+
+    </script>
 </head>
 <body>
     <div id = "topContainer">
-        <a href="" id = "nenuoj">
+        <a href="../index/index.html" id = "nenuoj">
             <div><h2>NENUOJ</h2></div>
         </a>
 
-        <a href="" id = "index">
+        <a href="../index/index.html" id = "index">
             <div><h3>主页</h3></div>
         </a>
 
-        <a href="" id = "excercise">
+        <a href="#" id = "excercise">
             <div><h3>问题</h3></div>
         </a>
 
-        <a href="" id = "source">
+        <a href="../origion/origion.html" id = "source">
             <div><h3>来源/分类</h3></div>
         </a>
 
-        <a href="" id = "homework">
+        <a href="#" id = "homework">
             <div><h3>练习&作业</h3></div>
         </a>
 
-        <a href="" id = status>
+        <a href="#" id = status>
             <div><h3>状态</h3></div>
         </a>
 
-        <a href="" id = "rank">
+        <a href="#" id = "rank">
             <div><h3>排名</h3></div>
         </a>
 
-        <a href="" id = "help">
+        <a href="#" id = "help">
             <div><h3>常见问题</h3></div>
         </a>
-        <a href="" id = "discuss">
+        <a href="#" id = "discuss">
             <div><h3>讨论版</h3></div>
         </a>
 
-        <a href="" id = "information">
+        <a href="#" id = "information">
             <div><h4>账号</h4></div>
         </a>
     </div>
@@ -117,43 +152,83 @@
         <div id = "leftDiv">
             <div id = "annocement">
                 <div class = "headDiv"><h2>公告</h2></div>
-                <div class = "bottomDiv">
-                    <div><h5>标题</h5></div>
-                    <div><h5>时间</h5></div>
+                <div class = "middleDiv">
+                    <div>标题</div>
+                    <div>时间</div>
                 </div>
-                <div class = "bottomDiv"></div>
+                <div class = "bottomDiv">
+                    <div><a href="#">建站过程</a></div>
+                    <div>时间</div>
+                </div>
             </div>
 
             <div id = "helloworld">
                 <div class = "headDiv"><h2>helloworld</h2></div>
-                <div class = "bottomDiv"></div>
+                <div class = "middleDiv"></div>
             </div>
         </div>
     
         <div id = "rightDiv">
             <div id = "newUpdate">
-                <div class = "headDiv"></div>
-                <div class = "bottomDiv"></div>
-                <div class = "bottomDiv"></div>
-                <div class = "bottomDiv"></div>
-                <div class = "bottomDiv"></div>
-                <div class = "bottomDiv"></div>
-                <div class = "bottomDiv"></div>
+                <div class = "headDiv"><h2>最新更新</h2></div>
+                <div class = "middleDiv">
+                    <div>标题</div><div>时间</div>
+                </div>
+                <div class = "bottomDiv">
+                    <div><a href="#">CJ029 累加和5</a></div>
+                    <div>2023-04-27</div>
+                </div>
+                <div class = "bottomDiv">
+                    <div><a href="#">CJ029 累加和5</a></div>
+                    <div>2023-04-27</div>
+                </div>
+                <div class = "bottomDiv">
+                    <div><a href="#">CJ029 累加和5</a></div>
+                    <div>2023-04-27</div>
+                </div>
+                <div class = "bottomDiv">
+                    <div><a href="#">CJ029 累加和5</a></div>
+                    <div>2023-04-27</div>
+                </div>
+                <div class = "bottomDiv">
+                    <div><a href="#">CJ029 累加和5</a></div>
+                    <div>2023-04-27</div>
+                </div>
             </div>
 
             <div id = "find">
                 <div class = "headDiv"><h2>查找</h2></div>
-                <div class = "bottomDiv"></div>
+                <div class = "middleDiv">
+                    <input type="text" id = "inputBox" placeholder="  题目编号" onclik = "bordercolorchange()">
+                </div>
             </div>
 
             <div id = "newCompetition">
                 <div class = "headDiv"><h2>近期比赛</h2></div>
-                <div class = "bottomDiv"></div>
-                <div class = "bottomDiv"></div>
-                <div class = "bottomDiv"></div>
-                <div class = "bottomDiv"></div>
-                <div class = "bottomDiv"></div>
-                <div class = "bottomDiv"></div>
+                <div class = "middleDiv">
+                    <div>练习作业名称</div>
+                    <div>开始时间</div>
+                </div>
+                <div class = "bottomDiv">
+                    <div><a href="#">智能专业《算法分析与设计》课堂练习2</a></div>
+                    <div>2023-06-13 11:00:00</div>
+                </div>
+                <div class = "bottomDiv">
+                    <div><a href="#">智能专业《算法分析与设计》课堂练习2</a></div>
+                    <div>2023-06-13 11:00:00</div>
+                </div>
+                <div class = "bottomDiv">
+                    <div><a href="#">智能专业《算法分析与设计》课堂练习2</a></div>
+                    <div>2023-06-13 11:00:00</div>
+                </div>
+                <div class = "bottomDiv">
+                    <div><a href="#">智能专业《算法分析与设计》课堂练习2</a></div>
+                    <div>2023-06-13 11:00:00</div>
+                </div>
+                <div class = "bottomDiv">
+                    <div><a href="#">智能专业《算法分析与设计》课堂练习2</a></div>
+                    <div>2023-06-13 11:00:00</div>
+                </div>
             </div>
         </div>
     </div>
